@@ -1,13 +1,10 @@
-import Image from "next/image";
-import prisma from "@/lib/prisma";
+"use client"
 
-export default async function HomePage() {
-  const users = await prisma.user.findMany();
+export default function HomePage() {
 
-  console.log((users))
   return (
     <div>
-
+      Hellow world
     </div>
   );
 }
